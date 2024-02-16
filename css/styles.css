@@ -1,0 +1,177 @@
+/* Основний колір тексту #434455 */
+/* Додатковий колір тексту #2E2F42 */
+/* Колір акценту #4D5AE5 */
+/* Колір ховеру акцету #404BBF */
+/* Білий #FFFFFF */
+/* Cірий #E7E9FC */
+/* Світло-сірий #F4F4FD */
+
+:root {
+    --primary-text-colour: #434455;
+    --secondary-text-colour: #2E2F42;
+    --accent-color: #4D5AE5;
+    --dark-accent-color: #404BBF;
+    --white-color: #FFFFFF;
+    --grey-color: #E7E9FC;
+    --light-grey-color: #F4F4FD;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--primary-text-colour);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
+/* Logo */
+
+.logo {
+    color: var(--secondary-text-colour);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.accent {
+    color: var(--accent-color);
+} 
+
+
+/* Navigation */
+
+.site-nav .link {
+    color: var(--secondary-text-colour);
+    font-weight: 500;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-text-colour);
+}
+
+.site-nav .link:active,
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+/* Contacts */
+
+.contacts .link {
+    color: var(--primary-text-colour);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+}
+
+.hero-title {
+    color: var(--white-color);
+    background-color: #4D5AE5;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    /* text-align: center; */
+}
+
+.button {
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    font-family: inherit;
+}
+
+.hero .button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    /* align-items: center; */
+}
+
+.hero .button:hover,
+.hero .button:focus {
+    background-color: var(--dark-accent-color);
+}
+
+
+/* Section */
+
+.section-title {
+    color: var(--secondary-text-colour);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.advantages-list .title,
+.member-list .title,
+.projects-list .title {
+    color: var(--secondary-text-colour);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team {
+    background-color: var(--light-grey-color);
+}
+
+
+/* Projects */
+
+.filter .button {
+    background-color: var(--light-grey-color);
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+    background-color: var(--dark-accent-color);
+    color: var(--white-color);
+}
+
+.projects-list .link {
+    color: var(--primary-text-colour);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary-text-colour);
+}
+
+.logo-footer {
+    color: var(--light-grey-color);
+}
+
+.footer .text {
+    color: var(--grey-color);
+}
