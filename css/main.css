@@ -1,0 +1,94 @@
+:root {
+    --primary-text-color: #434455;
+    --secondary-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --dark-accent-color: #404BBF;
+    --white-color: #FFFFFF;
+    --grey-color: #E7E9FC;
+    --light-grey-color: #F4F4FD;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--primary-text-color);
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+
+/* Header */
+
+.logo {
+    color: var(--secondary-text-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.logo:hover, 
+.logo:focus, 
+.logo:active, 
+.accent{
+    color: var(--accent-color);
+}
+
+.nav-list .link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+    color: var(--accent-color);
+}
+ 
+.nav-list .link:active, 
+.nav-list .link.current,
+.contacts-list .link:active {
+    color: var(--dark-accent-color);
+}
+
+.contacts-list .link {
+    color: var(--secondary-text-color);
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary-text-color);
+}
+
+.logo-footer {
+    color: var(--light-grey-color);
+}
+
+.footer-text {
+    color: var(--grey-color);
+}

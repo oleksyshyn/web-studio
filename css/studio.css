@@ -1,0 +1,50 @@
+/* Hero */
+
+.hero {
+    text-align: center;
+}
+
+.hero-title {
+    background-color: var(--secondary-text-color);
+    color: var(--white-color);
+
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+}
+
+.hero-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.hero-btn:hover, 
+.hero-btn:focus, 
+.hero-btn:active {
+    background-color: var(--dark-accent-color);
+}
+
+
+/* Section */
+
+.section-title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.advantages-list .title, 
+.member-list .title {
+    color: var(--secondary-text-colour);
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team {
+    background-color: var(--light-grey-color);
+}
