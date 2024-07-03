@@ -1,0 +1,23 @@
+.filter-btn {
+    background-color: var(--grey-color);
+    color: var(--accent-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn:active {
+    background-color: var(--dark-accent-color);
+    color: var(--white-color);
+}
+
+.project-list .link {
+    color: var(--primary-text-color);
+}
+
+.project-list .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
