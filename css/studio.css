@@ -1,10 +1,16 @@
 /* Hero */
 
 .hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+
     text-align: center;
 }
 
 .hero-title {
+    width: 492px;
+    margin: 0 auto 48px;
+    
     background-color: var(--secondary-text-color);
     color: var(--white-color);
 
@@ -14,8 +20,13 @@
 }
 
 .hero-btn {
+    padding: 16px 32px;
+    border-color: transparent;
+
     background-color: var(--accent-color);
     color: var(--white-color);
+
+    font-weight: 700;
 }
 
 .hero-btn:hover, 
@@ -27,7 +38,13 @@
 
 /* Section */
 
+.section.no-padding-bottom {
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-bottom: 72px;
+
     color: var(--secondary-text-color);
 
     font-weight: 700;
@@ -36,15 +53,59 @@
     text-align: center;
 }
 
+.advantages-list,
+.work-list,
+.member-list {
+    display: flex;
+}
+
+.advantages-list > .item {
+    width: 264px;
+    margin-right: 24px;
+}
+
+.advantages-list > .item:nth-child(4n) {
+    margin-right: 0;
+}
+
 .advantages-list .title, 
 .member-list .title {
+    margin-bottom: 8px;
+
     color: var(--secondary-text-colour);
     
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
 }
 
+.work-list > .item {
+    /* width: 360px; */
+    margin-right: 24px;
+}
+
+.work-list > .item:nth-child(3n) {
+    margin-right: 0;
+}
+
 .team {
     background-color: var(--light-grey-color);
+}
+
+.member-list > .item {
+    /* width: 264px; */
+    margin-right: 24px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.member-list > .item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.member-description {
+    padding: 32px 16px 32px;
+
+    background-color: var(--white-color);
+
+    text-align: center;
 }
