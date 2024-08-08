@@ -91,6 +91,7 @@ img {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -193,6 +194,7 @@ img {
 
 .footer-content {
     display: flex;
+    align-items: flex-start;
 }
 
 .logo-footer {
@@ -212,7 +214,8 @@ img {
     margin-left: 120px;
 }
 
-.social-media .title {
+.social-media > .title,
+.subscribe > .title {
     margin-bottom: 16px;
     
     color: var(--white-color);
@@ -223,7 +226,6 @@ img {
 
 .social-media-list {
     display: flex;
-
 }
 
 .social-media-item {
@@ -252,9 +254,72 @@ img {
 .social-media-link:hover,
 .social-media-link:focus {
     background-color: var(--green-color);
+
 }
 
 .social-media-icon {
     width: 24px;
     height: 24px;
+}
+
+.subscribe {
+    margin-left: auto;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.input-subscribe {
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    
+    color: var(--white-color);
+    background-color: transparent;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-subscribe:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.input-subscribe::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    margin-left: 24px;
+    border: none;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscrib:focus,
+.button-subscrib:active {
+    background-color: var(--dark-accent-color);
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
 }
