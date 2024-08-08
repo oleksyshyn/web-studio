@@ -369,9 +369,55 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+
+            <form autocomplete="off">
+                <p class="modal-title">Leave your contacts and we will call you back</p>
+                
+                <label class="label">
+                    <span class="label-name">Name</span>
+                    <div class="input-field">
+                        <input class="input" type="text" name="name">
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label">
+                    <span class="label-name">Phone</span>
+                    <div class="input-field">
+                        <input class="input" type="tel" name="phone">
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label">
+                    <span class="label-name">Email</span>
+                    <div class="input-field">
+                        <input class="input" type="email" name="email">
+                        <svg class="modal-icon">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </label>
+                
+                <label class="label textarea-label">
+                    <span class="label-name">Comment</span>
+                    <textarea class="textarea" name="comment" placeholder="Text input"></textarea>
+                </label>
+                
+                <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" name="policy">
+                    <span class="checkbox-icon"></span>
+                    I accept the terms and conditions of the&nbsp;<a href=""class="privacy-policy">Privacy Policy</a>
+                </label>
+                
+                <button class="btn submit-button" type="submit">Send</button>
+            </form>
         </div>
     </div>
-
     <script src="./js/modal.js"></script>
 </body>
 </html>
