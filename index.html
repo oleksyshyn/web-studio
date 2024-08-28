@@ -19,18 +19,65 @@
         <div class="container main-nav">
             <a href="./index.html" class="logo link"><span class="accent">WEB</span>STUDIO</a>
             
-            <nav>
-                <ul class="nav-list list">
-                    <li class="item"><a href="/" class="link current">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li class="item"><a href="" class="link">Contacts</a></li>
-                </ul>
-            </nav>
-            
-            <ul class="contact-list list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
-            </ul>
+            <button type="button" class="menu-open js-open-menu" aria-expanded="false" aria-controls="menu-container">
+                <svg class="icon-menu">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+
+            <div class="menu-container js-menu-container" id="menu-container">
+                <button type="button" class="menu-close js-close-menu" aria-expanded="false" aria-controls="menu-container">
+                    <svg class="icon-menu-close">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <nav>
+                    <ul class="nav-list list">
+                        <li class="item"><a href="/" class="link current">Studio</a></li>
+                        <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                        <li class="item"><a href="" class="link">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-contacts">
+                    <ul class="contact-list list">
+                        <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+                    </ul>
+                    
+                    <ul class="social-list list">
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-link">
+                                <svg class="social-icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -40,7 +87,7 @@
             <button type="button" class="btn hero-btn" data-modal-open>Order Service</button>
         </section>
 
-        <section class="section no-padding-bottom">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title visually-hidden">Features</h2>
                 
@@ -85,7 +132,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section works no-padding-bottom">
             <div class="container">
                 <h2 class="section-title">What are we doing</h2>
                 
@@ -103,7 +150,7 @@
                 
                 <ul class="member-list list">
                     <li class="item">
-                        <img src="./images/mark.jpg" alt="Mark Guerrero's photo" width="264">
+                        <img srcset="./images/mark-264.jpg 1x, ./images/mark-528.jpg 2x" src="./images/mark-264.jpg" alt="Mark Guerrero's photo" width="264">
                         <div class="member-description">
                             <h3 class="title">Mark Guerrero</h3>
                             <p>Product Designer</p>
@@ -140,7 +187,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/tom.jpg" alt="Tom Ford's photo" width="264">
+                        <img srcset="./images/tom-264.jpg 1x, ./images/tom-528.jpg 2x" src="./images/tom-264.jpg" alt="Tom Ford's photo" width="264">
                         <div class="member-description">
                             <h3 class="title">Tom Ford</h3>
                             <p>Frontend Developer</p>
@@ -177,7 +224,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/camila.jpg" alt="Camila Garcia's photo" width="264">
+                        <img srcset="./images/camila-264.jpg 1x, ./images/camila-528.jpg 2x" src="./images/camila-264.jpg" alt="Camila Garcia's photo" width="264">
                         <div class="member-description">
                             <h3 class="title">Camila Garcia</h3>
                             <p>Marketing</p>
@@ -214,7 +261,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <img src="./images/daniel.jpg" alt="Daniel Wilson's photo" width="264">
+                        <img srcset="./images/daniel-264.jpg 1x, ./images/daniel-528.jpg 2x" src="./images/daniel-264.jpg" alt="Daniel Wilson's photo" width="264">
                         <div class="member-description">
                             <h3 class="title">Daniel Wilson</h3>
                             <p>UI Designer</p>
@@ -307,7 +354,7 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <div>
+            <div class="footer-description">
                 <a href="./index.html" class="logo logo-footer link"><span class="accent">WEB</span>STUDIO</a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth
                     solutions.</p>
@@ -418,6 +465,8 @@
             </form>
         </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,34 +1,24 @@
 /* Hero */
 
 .hero {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
 
     text-align: center;
 }
 
 .overlay {
-    max-width: 1440px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
     background-color: var(--title-text-colour);
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
-        url(../images/bg-image.jpg);
     background-repeat: no-repeat;
 }
 
 .hero-title {
-    width: 492px;
-    margin: 0 auto 48px;
-    
     color: var(--white-color);
 
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
 }
 
 .hero-btn {
@@ -37,8 +27,6 @@
 
     background-color: var(--accent-color);
     color: var(--white-color);
-
-    font-weight: 700;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -59,71 +47,45 @@
 .section-title {
     margin-bottom: 72px;
 
-    color: var(--secondary-text-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
     text-align: center;
 }
 
 
 /* Advantages */
 
-.advantages-list,
-.work-list,
-.member-list {
-    display: flex;
-}
-
-.advantages-list > .item {
-    width: 264px;
-    margin-right: 24px;
-}
-
-.advantages-list > .item:nth-child(4n) {
-    margin-right: 0;
-}
-
-.advantages-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
+.advantages-list .title {
     margin-bottom: 8px;
-
-    background-color: var(--light-grey-color);   
 }
 
-.advantages-icon {
-    width: 64px;
-    height: 64px;
-}
-
-.advantages-list .title, 
-.member-list .title {
-    margin-bottom: 8px;
-
+.section-title,
+.advantages-list .title {
     color: var(--secondary-text-colour);
     
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11;
 }
 
-
-/* Work */
-
-.work-list > .item {
-    width: 360px;
-    margin-right: 24px;
+.advantages-list,
+.work-list,
+.member-list {
+    /* display: flex; */
 }
 
-.work-list > .item:nth-child(3n) {
+.advantages-list > .item:not(:last-child) {
+    /* width: 264px; */
+    /* margin-right: 24px; */
+    margin-bottom: 72px;
+}
+
+.advantages-list p {
+    font-weight: 500;
+}
+/* .advantages-list > .item:nth-child(4n) {
     margin-right: 0;
-}
+} */
+ 
+
 
 
 /* Team */
@@ -134,12 +96,12 @@
 
 .member-list > .item {
     width: 264px;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .member-list > .item:nth-child(4n) {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .member-description {
@@ -148,6 +110,16 @@
     background-color: var(--white-color);
 
     text-align: center;
+}
+
+.member-list .title {
+    margin-bottom: 8px;
+
+    color: var(--secondary-text-colour);
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 .member-description > p {
@@ -196,18 +168,35 @@
 
 .customers-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+    margin-left: -16px;
+    margin-top: -72px;
 }
 
 .customer-item {
-    width: 168px;
+    flex-basis: calc(100% / 2 - 16px);
+    margin-left: 16px;
+    margin-top: 72px;
     height: 88px;
-    margin-right: 24px;
+}
+
+.customers-list {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.customer-item {
+    /* width: 168px;
+    height: 88px;
+    margin-right: 24px; */
 }
 
 .customer-item:nth-child(6n) {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 
 .customer-logo-link{
@@ -232,7 +221,7 @@
 }
 
 .customer-icon {
-    width: 104px;
+    width: 110px;
     height: 56px;
     fill: currentColor;
 }
@@ -270,8 +259,9 @@
 
     display: flex;
     flex-direction: column;
-    width: 408px;
+    width: 392px;
     height: 584px;
+    /* width: 408px; */
     padding: 24px;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -491,4 +481,137 @@
 .submit-button:focus,
 .submit-button:active {
     background-color: var(--dark-accent-color);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .overlay {
+        max-width: 428px;
+        height: 432px;
+    
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+            url(../images/bg-image.jpg);
+    }
+
+    @media screen and (min-device-pixel-raio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-bg@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 72px;
+
+        font-size: 36px;
+        line-height: 1.11;
+    }
+
+    .advantages-list .title {
+        text-align: center;
+    }
+
+    .member-list > .item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .member-list > .item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .advantages-background {
+        display: none;
+    }
+
+    .section.works {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .overlay {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
+        max-width: 768px;
+        height: 436px;
+    }
+
+    @media screen and (min-device-pixel-raio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 36px;
+
+        font-size: 56px;
+        line-height: 1.07;
+    }
+
+
+
+    .customer-icon {
+        width: 104px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 192px;
+        padding-bottom: 192px;
+    }
+
+    .overlay {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desktop-bg.jpg);
+        max-width: 1440px;
+        height: 600px;
+    }
+
+    @media screen and (min-device-pixel-raio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .overlay {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desktop-bg@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+    .advantages-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    
+        background-color: var(--light-grey-color);   
+    }
+    
+    .advantages-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* Works */
+ 
+    .work-list > .item {
+        width: 360px;
+        margin-right: 24px;
+    }
+
+    .work-list > .item:nth-child(3n) {
+        margin-right: 0;
+    }
 }
