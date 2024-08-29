@@ -23,6 +23,8 @@ html {
 }
 
 body {
+    min-width: 320px;
+
     background-color: var(--white-color);
     color: var(--primary-text-color);
     
@@ -34,7 +36,6 @@ body {
 }
 
 .container {
-    /* min-width: 320px; */
     padding-left: 16px;    
     padding-right: 16px;
     margin-left: auto;
@@ -436,7 +437,6 @@ img {
     .footer-content {
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
     }
 
     .footer-description {
@@ -469,7 +469,6 @@ img {
     .input-subscribe {
         max-width: 398px;
         width: 100%;
-        /* width: 398px; */
         margin-bottom: 16px;
     }
 }
