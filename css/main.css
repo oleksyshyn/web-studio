@@ -337,14 +337,16 @@ img {
 
     .menu-close {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
         align-self: flex-end;
+        
 
         width: 24px;
         height: 24px;
-        flex-shrink: 0;
-        /* min-height: 24px; */
+        margin: 0;
+        padding: 0;
+        
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -352,7 +354,8 @@ img {
     }
 
     .icon-menu-close {
-        /* display: flex; */
+        display: flex;
+        align-self: center;
         /* width: 8px;
         height: 8px; */
     }
