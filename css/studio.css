@@ -260,8 +260,6 @@
 }
 
 .close-icon {
-    /* width: 8px;
-    height: 8px; */
     fill: currentColor;
 }
 
@@ -322,10 +320,6 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .input:focus + .modal-icon {
-    fill: var(--accent-color);
-} */
 
 .input-field:focus-within > .modal-icon {
     fill: var(--accent-color);
